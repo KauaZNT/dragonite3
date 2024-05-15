@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 24px;
+    background-image: url(./IMG/azul.jpg);
+    background-size: cover;
+}
+.card{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow:4px 4px 12px #aaaaaa;
+}
+
+.card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 50%;
+}
+
+.card img{
+    height: 200px;
+    width: 350px;
+    border-radius: 12px 12px 0 0;
+}
+
+.card h1{
+    font-size: 30px;
+    color: #aaaaaa;
+}
+.card h2{
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+.card button1{
+    background-color: #ca0000;
+    height: 20px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-align: center;
+}
+.card button2{
+    background-color: #8f7373;
+    height: 20px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    body{
+        padding: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
